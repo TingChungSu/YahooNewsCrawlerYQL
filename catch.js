@@ -1,5 +1,6 @@
 function hideAlert(){
 	 $("div.alert").hide(0); 
+	 $("div.result").hide(0); 
 }
 
 function getData(){
