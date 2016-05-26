@@ -10,6 +10,7 @@ function getData(){
 		return;
 	}
 	console.log(url);
+	$("div.wait").slideDown("slow");
 	getTime(url);	//getTime
 }
 
@@ -30,6 +31,7 @@ function getTime(url){
 				
 				$("p.msgTime").text(time); 
 				$("p.msgTitle").text(title); 
+				hideAlert();
 				$("div.result").slideDown("slow");
 				$("div.succ1").slideDown("slow");
 				
